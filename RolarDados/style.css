@@ -1,0 +1,135 @@
+:root{
+    --Branco-marmore: #e8e2d6;
+    --Azul-profundo: #263746;
+    --Azul-Atlantida: #3C8474;
+    --Verde-mar: #A8c9c7;
+    --Ouro-velho: #c6a56B;
+
+    --Fundo: #171e29;
+    --Magia: #bd93f9;
+    --Alerta: #ff795f;
+    --Tecnologia: #63d5e5;
+}
+
+body{
+    background-color: var(--Branco-marmore);
+    color: black;
+
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+}
+h1{
+    
+}
+.dados{
+    background-color: #171e29;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 5px;
+    top: 5px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.dados>button{
+    width: 94px;
+    height: 94px;
+
+}
+
+.lista_dados{
+    display:grid ;
+    gap: 5px;
+    margin: 5px;
+    align-items: center;
+    /* justify-content: center; */
+}
+.lista_dados>button{
+    width: 54px;
+    height: 54px;
+}
+.lista_dados_nome{
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+
+.seleção_dados{
+    background-color: #263746;
+    position: fixed;
+    
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    top: -200px;
+    left: 5px;
+    width: 100px;
+
+    /* height: 500px; */
+
+    scale: 0;
+
+    opacity: 0;
+    transform: translateY(310px);
+    pointer-events: none;
+    transition:  opacity 0.2s ease, transform 0.3s ease, scale 0.3s ease ;
+    /* display: none; */
+}
+
+.seleção_dados.ativo{
+
+    scale: 1;
+
+    opacity: 1;
+    pointer-events: all;
+    
+}
+
+/* ====================Dados==================== */
+.para_imagem, .lista_dados>button{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+}
+
+.d2{
+    background-image: url(./imagens/d2.png);
+}
+.d4{
+    background-image: url(./imagens/d4.png);
+}
+.d6{
+    background-image: url(./imagens/d6.png);
+}
+.d8{
+    background-image: url(./imagens/d8.png);
+}
+.d10{
+    background-image: url(./imagens/d10.png);
+}
+.d12{
+    background-image: url(./imagens/d12.png);
+}
+.d20{
+    background-image: url(./imagens/d20.png);
+}
+.d100{
+    background-image: url(./imagens/d100.png);
+}
+
